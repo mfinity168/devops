@@ -7,4 +7,4 @@ Updated: -
 - HA Proxy version 2.2  
 - Docker version 20.10.1
 - Docker Compose version 1.24.1
-- certbot version 0.40.0
+- Certbot version 0.40.0
