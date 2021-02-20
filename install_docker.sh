@@ -1,10 +1,7 @@
 #!/bin/bash
 # Install Packages:
-# HA Proxy, Certbot(Lets Encrypt)
 # Docker, Docker Compose
 # ==========
-# HA-Proxy version 2.2.9-1
-# certbot 0.40.0
 # Docker version 20.10.3, build 48d30b5
 # docker-compose version 1.28.4, build cabd5cfb
 # ==========
@@ -35,18 +32,6 @@ apt-get install docker-ce docker-ce-cli containerd.io -y
 # ------------------------------
 curl -L "https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
-
-# ------------------------------
-#   Install HA Proxy
-# ------------------------------
-add-apt-repository --yes ppa:vbernat/haproxy-2.2
-apt update
-apt install haproxy -y
-
-# ------------------------------
-#   Install certbot
-# ------------------------------
-apt install certbot -y
 
 clear
 echo ""
