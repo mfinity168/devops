@@ -3,15 +3,16 @@
 # HA Proxy, Certbot(Lets Encrypt)
 # Docker, Docker Compose
 # ==========
-# HA-Proxy version 2.2.9-1
+# HA-Proxy version 2.2.14
 # certbot 0.40.0
-# Docker version 20.10.3, build 48d30b5
-# docker-compose version 1.28.4, build cabd5cfb
+# Docker version 20.10.6, build 370c289
+# docker-compose version 1.28.6, build 5db8d86f
 # ==========
 # Created: 17/01/2021
-# Updated: 20/02/2021
+# Updated: 10/05/2021
 
 timezone="Asia/Bangkok"
+docker_compose="1.28.6"
 
 apt update
 apt install -y apt-transport-https ca-certificates curl software-properties-common
@@ -33,7 +34,7 @@ apt-get install docker-ce docker-ce-cli containerd.io -y
 # ------------------------------  
 #   Install Docker Compose
 # ------------------------------
-curl -L "https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/$docker_compose/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
 # ------------------------------
