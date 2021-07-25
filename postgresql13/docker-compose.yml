@@ -1,0 +1,20 @@
+version: '3'
+services:
+  postgres13:
+    image: postgres:13.3
+    container_name: postgres13
+    restart: always
+    environment:
+      POSTGRES_USER: USER
+      POSTGRES_PASSWORD: PASSWORD
+    volumes:
+      - ./postgres13/pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+#     networks:
+#       private-network:
+#         ipv4_address: 1.1.1.1
+# networks:
+#   private-network:
+#     external:
+#       name: private-network
