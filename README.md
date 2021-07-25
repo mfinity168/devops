@@ -28,9 +28,11 @@ Updated: 25/07/2021
 # install_mysql8.sh
 
 - MySQL
+- docker-compose file
 - MySQL Config
 
 # install_postgresql13.sh
 
 - PostgreSQL
+- docker-compose file
 - PostgreSQL Config
