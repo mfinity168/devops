@@ -7,14 +7,17 @@ services:
     environment:
       POSTGRES_USER: USER
       POSTGRES_PASSWORD: PASSWORD
+      TZ: "Asia/Bangkok"
+    command: postgres -c 'config_file=/etc/postgresql/postgresql.conf'
     volumes:
       - ./postgres14/pgdata:/var/lib/postgresql/data
     ports:
       - 5432:5432
-#     networks:
-#       private-network:
-#         ipv4_address: 1.1.1.1
-# networks:
-#   private-network:
-#     external:
-#       name: private-network
+    # network_mode: host
+    # networks:
+    #   private-network:
+    #     ipv4_address: 1.1.1.1
+    # networks:
+    #   private-network:
+    #     external:
+    #       name: private-network
