@@ -1,14 +1,14 @@
 version: '3'
 services:
-  postgres13:
-    image: postgres:13.3
-    container_name: postgres13
+  postgres14:
+    image: postgres:14.0
+    container_name: postgres14
     restart: always
     environment:
       POSTGRES_USER: USER
       POSTGRES_PASSWORD: PASSWORD
     volumes:
-      - ./postgres13/pgdata:/var/lib/postgresql/data
+      - ./postgres14/pgdata:/var/lib/postgresql/data
     ports:
       - 5432:5432
 #     networks:

@@ -2,11 +2,11 @@
 # Install Packages:
 # Docker, Docker Compose
 # ==========
-# Docker version 20.10.7, build f0df350
+# Docker version 20.10.9, build c2ea9bc
 # docker-compose version 1.29.2, build 5becea4c
 # ==========
 # Created: 17/01/2021
-# Updated: 25/07/2021
+# Updated: 12/10/2021
 
 timezone="Asia/Bangkok"
 docker_compose="1.29.2"

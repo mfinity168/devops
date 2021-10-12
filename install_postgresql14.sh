@@ -1,14 +1,14 @@
 #!/bin/bash
-# Docker image: postgres:13.3
-# PostgreSQL version 13.3
+# Docker image: postgres:14.0
+# PostgreSQL version 14.0
 # ==========
 # Created: 25/07/2021
-# Updated: 
+# Updated: 12/10/2021
 
-COPY_FROM_PATH="/root/postgresql13"
+COPY_FROM_PATH="/root/postgresql14"
 COPY_TO_PATH="/opt/"
 
-docker pull postgres:13.3
+docker pull postgres:14.0
 
 cp -arv $COPY_FROM_PATH $COPY_TO_PATH
 
