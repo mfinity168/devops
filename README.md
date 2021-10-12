@@ -31,7 +31,7 @@ Updated: 12/10/2021
 - docker-compose file
 - MySQL Config
 
-# install_postgresql13.sh
+# install_postgres14.sh
 
 - PostgreSQL
 - docker-compose file

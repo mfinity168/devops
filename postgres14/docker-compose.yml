@@ -10,7 +10,8 @@ services:
       TZ: "Asia/Bangkok"
     command: postgres -c 'config_file=/etc/postgresql/postgresql.conf'
     volumes:
-      - ./postgres14/pgdata:/var/lib/postgresql/data
+      - ./pgdata:/var/lib/postgresql/data
+      - ./postgresql.conf:/etc/postgresql/postgresql.conf
     ports:
       - 5432:5432
     # network_mode: host

@@ -5,7 +5,7 @@
 # Created: 25/07/2021
 # Updated: 12/10/2021
 
-COPY_FROM_PATH="/root/postgresql14"
+COPY_FROM_PATH="/root/postgres14"
 COPY_TO_PATH="/opt/"
 
 docker pull postgres:14.0
