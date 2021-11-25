@@ -1,7 +1,7 @@
 version: '3'
 services:
   mysql8:
-    image: mysql:8.0.26
+    image: mysql:8.0.27
     container_name: mysql8
     restart: always
     security_opt:
@@ -15,6 +15,7 @@ services:
       MYSQL_ROOT_PASSWORD: PASSWORD
     ports:
       - 3306:3306
+
 #     networks:
 #       private-network:
 #         ipv4_address: 1.1.1.1

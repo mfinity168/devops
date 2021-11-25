@@ -3,16 +3,17 @@
 # HA Proxy, Certbot(Lets Encrypt)
 # Docker, Docker Compose
 # ==========
-# HA-Proxy version 2.2.15
+# HA-Proxy version 2.2.18
 # certbot 0.40.0
-# Docker version 20.10.7, build f0df350
+# Docker version 20.10.11, build dea9396
 # docker-compose version 1.29.2, build 5becea4c
 # ==========
 # Created: 17/01/2021
-# Updated: 25/07/2021
+# Updated: 25/11/2021
 
 timezone="Asia/Bangkok"
-docker_compose="1.29.2"
+# docker_compose="2.1.1" # v2
+docker_compose="1.29.2" # v1
 
 apt update
 apt install -y apt-transport-https ca-certificates curl software-properties-common

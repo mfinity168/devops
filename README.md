@@ -2,16 +2,16 @@
 
 Developer: mfinity168  
 Created: 20/01/2021  
-Updated: 12/10/2021
+Updated: 25/11/2021
 
 # Packages
 
-- HA Proxy version 2.2.15
+- HA Proxy version 2.2.18
 - Certbot version 0.40.0
-- Docker version 20.10.9, build c2ea9bc
+- Docker version 20.10.11, build dea9396
 - docker-compose version 1.29.2, build 5becea4c
-- MySQL version 8.0.26
-- PostgreSQL version 14.0
+- MySQL version 8.0.27
+- PostgreSQL version 14.1
 
 # install_devops.sh
 
